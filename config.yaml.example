@@ -1,0 +1,30 @@
+# 腾讯云开发者社区热力值分析工具配置
+
+# 你的社区 UID（在个人中心 URL 中查看，如 developer/user/12345678 中的数字）
+uid: 0
+
+# 排名年份
+year: 2026
+
+# 分析 Top N 作者
+top_n: 50
+
+# 你感兴趣的领域（用于选题推荐）
+categories:
+  - 云计算
+  - 人工智能
+  - 后端开发
+  - 前端开发
+  - 数据库
+  - DevOps
+
+# 发文目标
+posting_goal:
+  articles_per_month: 4
+
+# API 配置
+api:
+  timeout: 30
+  max_retries: 3
+  retry_delay: 2.0
+  page_delay: 1.0

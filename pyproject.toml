@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tecnet-point"
+version = "0.1.0"
+description = "腾讯云开发者社区热力值分析与选题推荐工具"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.31",
+    "click>=8.0",
+    "rich>=13.0",
+    "pyyaml>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.8",
+]
+
+[project.scripts]
+tecnet = "tecnet_point.cli:cli"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/tecnet_point"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
