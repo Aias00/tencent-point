@@ -37,7 +37,7 @@ def _find_config() -> Path | None:
     """搜索配置文件路径"""
     candidates = [
         Path.cwd() / "config.yaml",
-        Path.home() / ".tecnet-point" / "config.yaml",
+        Path.home() / ".tencent-point" / "config.yaml",
     ]
     for p in candidates:
         if p.exists():

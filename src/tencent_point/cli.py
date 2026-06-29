@@ -53,10 +53,10 @@ def get_client(config: dict) -> TencentDevClient:
 
 @click.group()
 @click.option("--verbose", "-v", is_flag=True, help="启用调试日志")
-@click.version_option(version="0.1.0", prog_name="tecnet-point")
+@click.version_option(version="0.1.0", prog_name="tencent-point")
 @click.pass_context
 def cli(ctx, verbose):
-    """tecnet-point — 腾讯云开发者社区热力值分析工具"""
+    """tencent-point — 腾讯云开发者社区热力值分析工具"""
     ctx.ensure_object(dict)
     ctx.obj["verbose"] = verbose
     ctx.obj["config"] = load_config()

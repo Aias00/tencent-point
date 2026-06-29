@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "tecnet-point"
+name = "tencent-point"
 version = "0.1.0"
 description = "腾讯云开发者社区热力值分析与选题推荐工具"
 requires-python = ">=3.10"
@@ -21,10 +21,10 @@ dev = [
 ]
 
 [project.scripts]
-tecnet = "tecnet_point.cli:cli"
+tencent = "tencent_point.cli:cli"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/tecnet_point"]
+packages = ["src/tencent_point"]
 
 [tool.ruff]
 line-length = 100

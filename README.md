@@ -1,4 +1,4 @@
-# tecnet-point
+# tencent-point
 
 腾讯云开发者社区热力值分析与选题推荐工具
 
@@ -41,36 +41,36 @@ categories:
 
 ```bash
 # 热力值排行
-tecnet rank --type heat --year 2026
+tencent rank --type heat --year 2026
 
 # 最具价值作者榜
-tecnet rank --type valuable --year 2026
+tencent rank --type valuable --year 2026
 ```
 
 ### 查看个人数据
 
 ```bash
-tecnet me --uid 12345678
+tencent me --uid 12345678
 ```
 
 ### 选题推荐
 
 ```bash
-tecnet topic --year 2026 --top 50
+tencent topic --year 2026 --top 50
 ```
 
 ### 竞品分析
 
 ```bash
 # 需要在 config.yaml 中设置 uid
-tecnet competitor --year 2026 --top 50
+tencent competitor --year 2026 --top 50
 ```
 
 ### JSON 输出
 
 ```bash
-tecnet topic --json | jq .
-tecnet competitor --json | jq .
+tencent topic --json | jq .
+tencent competitor --json | jq .
 ```
 
 ## 数据来源
